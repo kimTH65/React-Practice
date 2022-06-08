@@ -7,12 +7,16 @@ import TableHead from '@mui/material/TableHead';
 import TableBody from '@mui/material/TableBody';
 import Item from './components/Item'
 import List from './components/List'
+import Template from './components/Template'
+import Form from './components/Form'
 class App extends React.Component {
   
 
   render(){
     return(
-      <List/>
+      <Template form={<Form/>} list={<List/>}>
+
+      </Template>
     )
   }
 }

@@ -16,12 +16,7 @@ class List extends React.Component{
         }
     }
 
-    setRefresh = () => {
-        this.setState({items:''});
-        this.callApi().then(res => this.setState({items: res}))
-                        .catch(err => console.log(err));
-    }
-    
+
     componentDidMount() {
         this.callApi().then(res => this.setState({items: res}))
                         .catch(err => console.log(err));
@@ -32,6 +27,7 @@ class List extends React.Component{
         const body = await response.json();
         return body;
     }
+
     render() {
 
         return(
@@ -59,9 +55,7 @@ class List extends React.Component{
                 </TableBody>
             </Table>
         );
-
     }
-
 }
 
 export default List

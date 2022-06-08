@@ -1,0 +1,25 @@
+.main-template{
+    background: white;
+    width: 800px;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.title {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 100;
+    background: #678aad;;
+    color: white;
+}
+  
+.form {
+    padding: 1rem;
+    
+}
+
+.list {
+    border-top: 20px solid #678aad;
+    min-height: 5rem;
+}

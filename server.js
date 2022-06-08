@@ -35,6 +35,18 @@ app.get('/load', (req,res)=> {
     );
 });
 
+app.post('/insert',(req,res)=>{
+    let sql = 'insert into test values(null, ?, null, null)';
+    let title = req.body.title;
+    let params = [title];
+    connection.query(
+        sql, params, 
+        (err, rows, fields) =>{
+            res.send(rows)
+        }
+    );
+})
+
 app.listen(port, () => {
     console.log(`Server On ${port}`);
 })
