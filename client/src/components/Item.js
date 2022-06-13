@@ -12,7 +12,7 @@ class Item extends React.Component{
                 <TableCell>{id}</TableCell>
                 <TableCell>{title}</TableCell>
                 <TableCell>{onToggle === 'check' && '✓'}</TableCell>
-                <TableCell>{onRemove === 'removed' ? 'Ⅹ' : ""}<Delete id={this.props.id}/></TableCell>
+                <TableCell>{onRemove === "removed" ? 'Ⅹ' : <Delete id={this.props.id}/>}</TableCell>
             </TableRow>
         );
 

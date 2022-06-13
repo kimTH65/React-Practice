@@ -48,10 +48,9 @@ app.post('/insert',(req,res)=>{
     );
 });
 
-app.put("/update", (req,res) => {
+app.get("/delete/:id", (req,res) => {
     let sql = 'update test set onRemove = "removed" where id = ?';
-    let id = req.body.id;
-    let params = [title];
+    let params = [req.params.id];
     connection.query(
         sql,params,
         (err,rows,fields)=>{
