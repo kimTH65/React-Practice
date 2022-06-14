@@ -6,7 +6,7 @@ import Delete from './Delete';
 class Item extends React.Component{
     
     render() {
-        const { id, title, onToggle,toggle, remove} = this.props
+        const { id, title, onToggle, toggle, remove} = this.props
         return(
             <TableRow className='item' onClick={() => onToggle(id)}>
                 <TableCell>{id}</TableCell>
