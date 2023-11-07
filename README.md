@@ -87,3 +87,118 @@ app.get('/load', (req,res)=> {
 ```
 
 #
+
+<h3>4. Proxy설정</h3>
+
+<h5>　CORS(Cross Origin Resource Sharing)정책 위반 문제해결을 위해 proxy설정</h5>
+<div align="center"><h6>client/package.json</h6></div>
+
+```
+{
+  ...
+  "proxy": "http://localhost:5000/"
+}
+```
+
+#
+
+<h3>5. React</h3>
+
+<h5>　App.js가 초기 컴포넌트</h5>
+
+<div align="center"><h6>client/src/App.js</div>
+
+```
+import React from 'react';
+import './App.css';
+import TableRow from '@mui/material/TableRow';
+import TableCell from '@mui/material/TableCell';
+import Table from '@mui/material/Table';
+import TableHead from '@mui/material/TableHead';
+import TableBody from '@mui/material/TableBody';
+import Item from './components/Item'
+import List from './components/List'
+import Template from './components/Template'
+import Form from './components/Form'
+class App extends React.Component {
+  
+
+  render(){
+    return(
+      <Template form={<Form/>} list={<List/>}>
+
+      </Template>
+    )
+  }
+}
+
+export default App;
+```
+
+<h5>　CRUD관련 컴포넌트</h5>
+
+<div align="center"><h6>client/src/components</h6></div>
+
+```
+import React from 'react';
+import TableRow from '@mui/material/TableRow';
+import TableCell from '@mui/material/TableCell';
+import Table from '@mui/material/Table';
+import TableHead from '@mui/material/TableHead';
+import TableBody from '@mui/material/TableBody';
+
+
+import Item from './Item'
+
+class List extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            items:''
+        }
+    }
+
+
+    componentDidMount() {
+        this.callApi().then(res => this.setState({items: res}))
+                        .catch(err => console.log(err));
+    }
+
+    callApi = async () => {
+        const response = await fetch('/load');
+        const body = await response.json();
+        return body;
+    }
+
+    render() {
+
+        return(
+            
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>id</TableCell>
+                        <TableCell>title</TableCell>
+                        <TableCell>check</TableCell>
+                        <TableCell>onRemove</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {this.state.items ? this.state.items.map(c =>{
+                        return(
+                            <Item
+                                id={c.id}
+                                title={c.title}
+                                toggle={c.onToggle}
+                                remove={c.onRemove}
+                            />
+                        )
+                    }):""}
+                </TableBody>
+            </Table>
+        );
+    }
+}
+
+export default List
+```
