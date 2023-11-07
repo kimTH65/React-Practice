@@ -61,3 +61,29 @@ app.get('/load', (req,res)=> {
 ```
 
 #
+
+<h3>3. node서버와 react서버를 동시에 실행 시켜줄 스크립트 생성</h3>
+<div align="center"><h5>retest/package.json</h5></div>
+
+```
+{
+  "name": "react_test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.2.1",
+    "express": "^4.18.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "yarn": "^1.22.18"
+  }
+}
+```
+
+#
