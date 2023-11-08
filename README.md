@@ -24,8 +24,8 @@
 <h3>2. node.js서버 설정</h3>
 <div align="center">
     <h6>
-        <a href="retest/server.js">
-            retest/server.js
+        <a href="server.js">
+            server.js
         </a>
     </h6>
 </div>
@@ -77,8 +77,8 @@ app.get('/load', (req,res)=> {
 <h3>3. node서버와 react서버를 동시에 실행 시켜줄 스크립트 생성</h3>
 <div align="center">
     <h5>
-        <a href="retest/package.json">
-            retest/package.json
+        <a href="package.json">
+            package.json
         </a>
     </h5>
 </div>
