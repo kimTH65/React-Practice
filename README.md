@@ -1,7 +1,13 @@
 # React-Practice
 
 <h3>1. 데이터 베이스 정보 설정(MYSQL 사용)</h3>
-<div align="center"><h6>database.json</h6></div>
+<div align="center">
+    <h6>
+        <a href="database.json">
+            database.json
+        </a>
+    </h6>
+</div>
 
 ```
 {
@@ -16,7 +22,13 @@
 #
 
 <h3>2. node.js서버 설정</h3>
-<div align="center"><h6>retest/server.js</h6></div>
+<div align="center">
+    <h6>
+        <a href="retest/server.js">
+            retest/server.js
+        </a>
+    </h6>
+</div>
 
 ```
 const fs = require('fs');
@@ -63,7 +75,13 @@ app.get('/load', (req,res)=> {
 #
 
 <h3>3. node서버와 react서버를 동시에 실행 시켜줄 스크립트 생성</h3>
-<div align="center"><h5>retest/package.json</h5></div>
+<div align="center">
+    <h5>
+        <a href="retest/package.json">
+            retest/package.json
+        </a>
+    </h5>
+</div>
 
 ```
 {
@@ -91,7 +109,13 @@ app.get('/load', (req,res)=> {
 <h3>4. Proxy설정</h3>
 
 <h5>　CORS(Cross Origin Resource Sharing)정책 위반 문제해결을 위해 proxy설정</h5>
-<div align="center"><h6>client/package.json</h6></div>
+<div align="center">
+    <h6>
+        <a href="client/package.json">
+            client/package.json
+        </a>
+    </h6>
+</div>
 
 ```
 {
@@ -106,7 +130,13 @@ app.get('/load', (req,res)=> {
 
 <h5>　App.js가 초기 컴포넌트</h5>
 
-<div align="center"><h6>client/src/App.js</div>
+<div align="center">
+    <h6>
+        <a href="client/src/App.js">
+            client/src/App.js
+        </a>
+    </h6>
+</div>
 
 ```
 import React from 'react';
@@ -137,7 +167,13 @@ export default App;
 
 <h5>　CRUD관련 컴포넌트</h5>
 
-<div align="center"><h6>client/src/components</h6></div>
+<div align="center">
+    <h6>
+        <a href="client/src/components">
+            client/src/components
+        </a>
+    </h6>
+</div>
 
 ```
 import React from 'react';
