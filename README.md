@@ -69,7 +69,9 @@ app.get('/load', (req,res)=> {
     );
 });
 
-...
+  .
+  .
+  .
 ```
 
 #
@@ -118,8 +120,10 @@ app.get('/load', (req,res)=> {
 </div>
 
 ```
-{
-  ...
+  .
+  .
+  .
+
   "proxy": "http://localhost:5000/"
 }
 ```
@@ -176,15 +180,9 @@ export default App;
 </div>
 
 ```
-import React from 'react';
-import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
-import Table from '@mui/material/Table';
-import TableHead from '@mui/material/TableHead';
-import TableBody from '@mui/material/TableBody';
-
-
-import Item from './Item'
+  .
+  .
+  .
 
 class List extends React.Component{
     constructor(props){
@@ -193,7 +191,6 @@ class List extends React.Component{
             items:''
         }
     }
-
 
     componentDidMount() {
         this.callApi().then(res => this.setState({items: res}))
