@@ -4,7 +4,7 @@
 <div align="center">
     <h6>
         <a href="database.json">
-            database.json
+            Node.js - database.json
         </a>
     </h6>
 </div>
@@ -25,7 +25,7 @@
 <div align="center">
     <h6>
         <a href="server.js">
-            server.js
+            Node.js - server.js
         </a>
     </h6>
 </div>
@@ -81,7 +81,7 @@ app.get('/load', (req,res)=> {
 <div align="center">
     <h5>
         <a href="package.json">
-            package.json
+            Node.js - package.json
         </a>
     </h5>
 </div>
@@ -138,7 +138,7 @@ app.get('/load', (req,res)=> {
 <div align="center">
     <h6>
         <a href="client/src/App.js">
-            client/src/App.js
+            React - App.js
         </a>
     </h6>
 </div>
@@ -175,7 +175,7 @@ export default App;
 <div align="center">
     <h6>
         <a href="client/src/components">
-            client/src/components
+            React - components
         </a>
     </h6>
 </div>
