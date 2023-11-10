@@ -115,7 +115,7 @@ app.get('/load', (req,res)=> {
 <div align="center">
     <h6>
         <a href="client/package.json">
-            client/package.json
+            React - package.json
         </a>
     </h6>
 </div>
