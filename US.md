@@ -120,7 +120,7 @@ app.get('/load', (req,res)=> {
 
 <h3>4. Proxy Settings</h3>
 
-<h5>　CORS(Cross Origin Resource Sharing)정책 위반 문제해결을 위해 proxy설정</h5>
+<h5>　Set proxy for Cross Origin Resource Sharing (CORS) policy</h5>
 <div align="center">
     <h6>
         <a href="client/package.json">
