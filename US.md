@@ -30,7 +30,7 @@
 
 #
 
-<h3>2. node.js server settings/h3>
+<h3>2. node.js server settings</h3>
 <div align="center">
     <h6>
         <a href="server.js">
