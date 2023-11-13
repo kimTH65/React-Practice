@@ -9,7 +9,7 @@
   </h5>
 </div>
  
-<h3>1. データベース情報設定(MYSQLを使用)</h3>
+<h3>1. Database情報設定(MYSQLを使用)</h3>
 <div align="center">
     <h6>
         <a href="database.json">
@@ -30,7 +30,7 @@
 
 #
 
-<h3>2. node.jsサーバー設定</h3>
+<h3>2. node.js Server設定</h3>
 <div align="center">
     <h6>
         <a href="server.js">
@@ -86,7 +86,7 @@ app.get('/load', (req,res)=> {
 
 #
 
-<h3>3. ノードサーバーとreactサーバーを同時に実行させるスクリプト生成</h3>
+<h3>3. Node ServerとReact Serverを同時に実行させるSctipt生成</h3>
 <div align="center">
     <h5>
         <a href="package.json">
@@ -120,7 +120,7 @@ app.get('/load', (req,res)=> {
 
 <h3>4. Proxy設定</h3>
 
-<h5>　CORS(Cross Origin Resource Sharing)政策違反問題解決のためのproxy設定</h5>
+<h5>　CORS(Cross Origin Resource Sharing)政策違反問題解決のためのProxy設定</h5>
 <div align="center">
     <h6>
         <a href="client/package.json">
